@@ -55,6 +55,13 @@ public class Report {
     @Column(name = "content", nullable = false)
     private String content;
 
+    @Column(name = "partner_name", length = 255, nullable = false)
+    private String partner_name;
+
+    @Lob
+    @Column(name = "negotiation_content", nullable = false)
+    private String negotiation_content;
+
     @Column(name = "created_at", nullable = false)
     private Timestamp created_at;
 
@@ -99,6 +106,23 @@ public class Report {
 
     public void setContent(String content) {
         this.content = content;
+    }
+
+
+    public String getPartner_name() {
+        return partner_name;
+    }
+
+    public void setPartner_name(String partner_name) {
+        this.partner_name = partner_name;
+    }
+
+    public String getNegotiation_content() {
+        return negotiation_content;
+    }
+
+    public void setNegotiation_content(String negotiation_content) {
+        this.negotiation_content = negotiation_content;
     }
 
     public Timestamp getCreated_at() {

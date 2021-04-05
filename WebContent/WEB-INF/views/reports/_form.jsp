@@ -26,5 +26,13 @@
 <textarea name="content" rows="10" cols="50">${report.content}</textarea>
 <br /><br />
 
+<label for="partner_name">取引先企業</label><br />
+<input type="text" name="partner_name" value="${report.partner_name}" />
+<br /><br />
+
+<label for="negotiation_content">商談内容</label><br />
+<textarea name="negotiation_content" rows="10" cols="50">${report.negotiation_content}</textarea>
+<br /><br />
+
 <input type="hidden" name="_token" value="${_token}" />
 <button type="submit">投稿</button>
