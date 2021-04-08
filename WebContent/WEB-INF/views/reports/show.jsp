@@ -24,6 +24,14 @@
                             </td>
                         </tr>
                         <tr>
+                            <th>取引先企業</th>
+                            <td>
+                                <pre><c:out value="${report.partner_name}" /></pre>
+                            </td>
+                        </tr>
+
+                        <tr>
+                        <tr>
                             <th>商談内容</th>
                             <td>
                                 <pre><c:out value="${report.negotiation_content}" /></pre>
